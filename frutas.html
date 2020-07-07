@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <title>Feira Delivery</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="black">
+    
+    <header>
+
+        <div class="menu-top">
+            <div class="container-fluid">
+                <div class="row justify-content-center justify-content-sm-end">
+                    <ul class="nav">
+                        <li><a href="#"><img src="assets/list.png" alt="lista"><span>Lista de Compras</span></a></li>
+                        <li>
+                            <a href="tel:44332211" data-toggle="tooltip" data-placement="bottom" title="(11) 4433-2211">
+                                <img src="assets/phone.png" alt="telefone">
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="assets/cesta.png" alt="cesta"><span class="badge badge-light">0</span></a></li>
+                        <div class="dropdown">
+                            <li>
+                                <a href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/user.png" alt="user">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="userMenu">
+                                    <a class="dropdown-item" href="#">Login</a>
+                                    <a class="dropdown-item" href="#">Cadastro</a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <div class="container-fluid">
+
+                    <div class="logo">
+                        <a href="#" class="nav-brand"><img src="assets/logo.png" alt="logo"></a>
+                    </div>
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSite">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSite">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Frutas</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Verduras</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Legumes</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Kitfeira</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Hortaliças</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Temperos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Vinhos</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div id="carouselSlide" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselSlide" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselSlide" data-slide-to="1"></li>
+                <li data-target="#carouselSlide" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="mask"></div>
+                    <img src="assets/hero1.png" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Nossa <span class="verde">feira</span> oferece</h1>
+                        <p>
+                            Todos os dias frutas fresquinhas e selecionadas</br>
+                            prontinhas para ir para sua <span class="verde">casa</span>
+                        </p>   
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="mask"></div>
+                    <img src="assets/hero2.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Nossa <span class="verde">feira</span> oferece</h1>
+                        <p>
+                            Todos os dias frutas fresquinhas e selecionadas</br>
+                            prontinhas para ir para sua <span class="verde">casa</span>
+                        </p>   
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="mask"></div>
+                    <img src="assets/hero3.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Nossa <span class="verde">feira</span> oferece</h1>
+                        <p>
+                            Todos os dias frutas fresquinhas e selecionadas</br>
+                            prontinhas para ir para sua <span class="verde">casa</span>
+                        </p>   
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#carouselSlide" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#carouselSlide" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Proximo</span>
+            </a>
+
+        </div>
+        <div id="dropSearch">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-md-3 order-md-1 text-center text-md-left">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="drop1" data-toggle="dropdown" aria-haspopup="true" aria-expand="false">
+                                Categoria
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="drop1">
+                                <a href="#0" class="dropdown-item">Frutas Variadas</a>
+                                <a href="#0" class="dropdown-item">Frutas Citricas</a>
+                                <a href="#0" class="dropdown-item">Frutas de Epoca</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-last order-md-2 text-center">
+                        <div class="box-input">
+                            <input type="text" class="input-search" placeholder="Busca" aria-label="Busca" aria-describedby="btn-search">
+                            <button type="button" id="btn-search">
+                                <img class="img-search" src="assets/search.png" alt="Lupa">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 order-md-3 text-center text-md-right">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="drop2" data-toggle="dropdown" aria-haspopup="true" aria-expand="false">
+                                Ordenar
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="drop2">
+                                <a href="#0" class="dropdown-item">Tipo</a>
+                                <a href="#0" class="dropdown-item">Ordem Alfabetica</a>
+                                <a href="#0" class="dropdown-item">Variedades</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="principal">
+            <div class="container-fluid">
+
+                <div class="row justify-content-center">
+                    <div class="text-principal">
+                        <span class="line"></span><h1>frutas</h1>
+                        <p>Escolha entre <span>orgânico</span> e <span>não orgânico</span></br> e veja as variedades de frutas</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/maca.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Maças</h5>
+                                <p class="card-text">5 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0" class="btn btn-card-varie">Ver Variedades</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/banana.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Bananas</h5>
+                                <p class="card-text">4 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0"class="btn btn-card-varie">Ver Variedades</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/laranja.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Laranjas</h5>
+                                <p class="card-text">3 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0"class="btn btn-card-varie">Ver Variedades</a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/caqui.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Caquis</h5>
+                                <p class="card-text">3 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0"class="btn btn-card-varie">Ver Variedades</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/morango.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Morangos</h5>
+                                <p class="card-text">5 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0"class="btn btn-card-varie">Ver Variedades</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/pera.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Peras</h5>
+                                <p class="card-text">3 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0"class="btn btn-card-varie">Ver Variedades</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/uva.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Uvas</h5>
+                                <p class="card-text">6 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0"class="btn btn-card-varie">Ver Variedades</a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="assets/tomate.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Tomates</h5>
+                                <p class="card-text">7 variedades</p>
+                                <button type="button" class="btn btn-card-org">Não Orgânico</button>
+                                <button type="button" class="btn btn-card-org">Orgânico</button>
+                                <a href="#0"class="btn btn-card-varie">Ver Variedades</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <nav class="paginacao">
+                        <ul class="nav">
+                           <li><a>Primeiro</a></li>
+                           <li><a class="num active">1</a></li>
+                           <li><a class="num">2</a></li>
+                           <li><a class="num">3</a></li>
+                           <li><a class="num">4</a></li>
+                           <li><a>Ultimo</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container-fluid">
+            <div class="row py-5">
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="box-links">
+                        <h6>Ajuda e suporte</h6>
+                        <ul class="border-top border-bottom">
+                            <li><a href="#0">Fale conosco</a></li>
+                            <li><a href="#0">Dúvidas frequentes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="box-links">
+                        <h6>Sobre o serviço</h6>
+                        <ul class="border-top border-bottom">
+                            <li><a href="#0">Política de troca</a></li>
+                            <li><a href="#0">Formas de pagamento</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="box-links">
+                        <h6>Sobre a entrega</h6>
+                        <ul class="border-top border-bottom">
+                            <li><a href="#0">Entrega</a></li>
+                            <li><a href="#0">Política de privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="box-socials">
+                        <p>Fique por dentro das novidadese ofertas em nossas midias sociais</p>
+                        <ul class="nav list-social">
+                            <li><a href="#0"><img src="assets/social-facebook.png"></a></li>
+                            <li><a href="#0"><img src="assets/social-instagram.png"></a></li>
+                            <li><a href="#0"><img src="assets/social-twitter.png"></a></li>
+                            <li><a href="#0"><img src="assets/social-youtube.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center pb-3">
+                <p class="copyright text-center">
+                    © 2018, FeiraDelivery Comércio eletrônico por 
+                    T.S.Pinatel Informatica Eireli ME - CNPJ: 09.396.819/0001-94
+                </p>
+            </div>
+
+            <div id="btn-up">
+                <img src="assets/setaUp.png">
+            </div>
+        </div>
+
+    </footer>
+        
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/popper.js/dist/umd/popper.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
