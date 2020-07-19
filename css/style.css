@@ -294,13 +294,16 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 2000;
     background: rgba(0, 0, 0, .6);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+}
+.mod-box.mostrar {
+    display: flex;
 }
 .mod-box h4 {
     margin-bottom: 35px;
@@ -333,6 +336,29 @@ footer {
     left: 0;
     width: 100%;
 }
+button.btn-close-modal {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+}
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate(0, -300px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0 , 0);
+    }
+}
+.mostrar-this {
+    display: block!important;
+    animation: modal .5s;
+}
 /*Modal LOGIN*/
 #mod-login {
     position: relative;
@@ -343,10 +369,7 @@ footer {
     border-radius: 10px;
     text-align: center;
     transition: .5s;
-}
-#mod-login.mostrar {
-    padding: 40px 5px;
-    transition: .5s;
+    display: none;
 }
 #mod-login p {
     margin-top: 15px;
@@ -357,11 +380,11 @@ footer {
 #recup-senha {
     display: none;
 }
-#mod-login.mostrar #recup-senha {
+#mod-login.mostrar-recup #recup-senha {
     display: block;
 }
 #recup-senha p {
-    margin: 0;
+    margin: 5px 0 0 0;
     font-size: 13px;
 }
 /*Modal CADASTRO*/
@@ -374,6 +397,7 @@ footer {
     border-radius: 10px;
     text-align: center;
     transition: .5s;
+    display: none;
 }
 #mod-cadastro label a {
     color: #4c6300;

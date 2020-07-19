@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body class="black">
+<body>
     
     <header>
 
@@ -30,9 +30,9 @@
                                 <a href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="assets/user.png" alt="user">
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="userMenu">
-                                    <a class="dropdown-item" href="#">Login</a>
-                                    <a class="dropdown-item" href="#">Cadastro</a>
+                                <div id="menu-modal" class="dropdown-menu" aria-labelledby="userMenu">
+                                    <a class="dropdown-item mod-login" href="#">Login</a>
+                                    <a class="dropdown-item mod-cadastro" href="#">Cadastro</a>
                                 </div>
                             </li>
                         </div>
@@ -355,7 +355,48 @@
         </div>
 
     </footer>
-        
+
+    <div class="mod-box">
+
+        <div id="mod-login">
+            <button class="btn-close-modal">X</button>
+            <div class="mod-logo">
+                <img src="assets/logo.png">
+            </div>
+            <h4>LOGIN</h4>
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="password"class="form-control" placeholder="Senha">
+            <button type="button" class="btn">Entrar</button>
+            <p>Esqueceu a senha ? <small><a href="#" id="link-recup">Clique aqui!</a></small></p>
+            <div id="recup-senha">
+                <input type="email" class="form-control" placeholder="Email Cadastrado">
+                <button type="submit" class="btn">Enviar</button>
+                <p>Enviaremos um email de recuperação da senha.</p>
+            </div>
+        </div>
+
+        <div id="mod-cadastro">
+            <button class="btn-close-modal">X</button>
+            <form>
+                <div class="mod-logo">
+                    <img src="assets/logo.png">
+                </div>
+                <h4>CADASTRO</h4>
+                <input type="text" class="form-control" placeholder="Nome Completo" required>
+                <input type="number" class="form-control" placeholder="CPF" required>
+                <input type="email" class="form-control" placeholder="Email" required>
+                <input type="password" class="form-control" placeholder="Senha de acesso" required>
+                <div class="my-3">
+                    <input type="checkbox" id="check-termos" required>
+                    <label for="check-termos" class="">Li e Concordo com os <a href="#0">Termos</a></label>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </div>
+
+    </div>
+
+
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/popper.js/dist/umd/popper.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
